@@ -74,7 +74,7 @@ const incrementScore = num => {
 };
 
 choiceElements.forEach(choice => {
-    choice.parentElement.addEventListener('click', e => {
+    choice.addEventListener('click', e => {
         if (!acceptingAnswers) return;
 
         acceptingAnswers = false;
